@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogging Website</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+<header class="header">
+
+    <a href="#" class="logo"><span>b</span>log<span>z</span>one</a>
+
+    <nav class="navbar">
+        <a href="#banner">banner</a>
+        <a href="#posts">my posts</a>
+        <a href="#contact">contact me</a>
+    </nav>
+
+    <div class="icons">
+        <i class="fas fa-bars" id="menu-bars"></i>
+        <i class="fas fa-search" id="search-icon"></i>
+    </div>
+
+    <form action="" class="search-form">
+        <input type="search" name="" placeholder="search here..." id="search-box">
+        <label for="search-box" class="fas fa-search"></label>
+    </form>
+
+</header>
+
+
+<section class="banner" id="banner">
+
+    <div class="content">
+        <h3>explore the nature</h3>
+        <p>Enjoy the calm and beauty of the outdoors, where you can relax and connect with nature.</p>
+        <a href="#" class="btn">My blogs</a>
+    </div>
+
+</section>
+
+<!-- posts section -->
+
+<button class="btn" id="create-post-btn" style="margin-bottom: 12px;">Create Post</button>
+
+<section class="container" id="posts">
+
+    <div class="posts-container">
+
+        <!-- Create Post Modal -->
+        <div id="create-post-modal" style="display: none;">
+        <div style="background: #fff; padding: 2rem; border-radius: 1rem; box-shadow: var(--box-shadow); max-width: 600px; margin: auto; position: relative;">
+            <h2 style="margin-bottom: 1rem;">Create New Post</h2>
+            <input type="text" id="post-title" placeholder="Post Title" style="width:100%; padding:1rem; margin-bottom:1rem;">
+            <textarea id="post-content" placeholder="Write something..." style="width:100%; padding:1rem; height:100px; margin-bottom:1rem;"></textarea>
+            <input type="file" id="post-image" accept="image/*" style="margin-bottom:1rem;">
+            <br>
+            <button class="btn" id="submit-post">Add Post</button>
+            <button class="btn" style="background: #aaa;" id="cancel-post">Cancel</button>
+        </div>
+        </div>
+
+        <div class="post">
+            <img src="images/blog-1.jpg" alt="" class="image">
+            <div class="date">
+                <i class="far fa-clock"></i>
+                <span>1st April, 2025</span>
+            </div>
+            <h3 class="title">A Walk Among the Peaks</h3>
+            <p class="text">High above the tree line, where the sun kisses the rugged cliffs and the valleys stretch endlessly into the horizon, a lone adventurer stands in awe. Surrounded by jagged rock formations and lush green slopes, the quiet majesty of nature invites introspection and wonder. This blog captures the beauty of solitude and the thrill of exploration in the heart of the mountains.</p>
+    
+            <div class="links">
+                <a href="#" class="user">
+                    <i class="far fa-user"></i>
+                    <span>by admin</span>
+                </a>
+                <a href="#" class="icon">
+                    <i class="far fa-comment"></i>
+                    <span>(45)</span>
+                </a>
+                <a href="#" class="icon">
+                    <i class="far fa-share-square"></i>
+                    <span>(29)</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="post">
+            <img src="images/blog-2.jpg" alt="" class="image">
+            <div class="date">
+                <i class="far fa-clock"></i>
+                <span>1st April, 2025</span>
+            </div>
+            <h3 class="title">Thunder Over the Desert</h3>
+            <p class="text">As dark storm clouds gather over the sunlit mesas of the vast desert, a bolt of lightning slices through the sky—capturing the raw power of nature in motion. The dramatic contrast between the glowing red rocks and the ominous skies paints a story of solitude, strength, and survival. This blog explores the fierce beauty and unpredictable mood of the wild American Southwest.</p>
+
+            <div class="links">
+                <a href="#" class="user">
+                    <i class="far fa-user"></i>
+                    <span>by admin</span>
+                </a>
+                <a href="#" class="icon">
+                    <i class="far fa-comment"></i>
+                    <span>(45)</span>
+                </a>
+                <a href="#" class="icon">
+                    <i class="far fa-share-square"></i>
+                    <span>(29)</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="post">
+            <img src="images/blog-3.jpg" alt="" class="image">
+            <div class="date">
+                <i class="far fa-clock"></i>
+                <span>1st April, 2025</span>
+            </div>
+            <h3 class="title">Reflections of Serenity</h3>
+            <p class="text">Nestled beneath towering snow-capped peaks, a crystal-clear lake mirrors the sky’s soft hues and the rugged beauty of the mountains. The stillness of the water, the quiet presence of the forest, and the glow of sunset create a moment of pure peace. In this blog, we explore the tranquil charm of alpine landscapes and the calming effect of nature's quietest places.</p>
+
+            <div class="links">
+                <a href="#" class="user">
+                    <i class="far fa-user"></i>
+                    <span>by admin</span>
+                </a>
+                <a href="#" class="icon">
+                    <i class="far fa-comment"></i>
+                    <span>(45)</span>
+                </a>
+                <a href="#" class="icon">
+                    <i class="far fa-share-square"></i>
+                    <span>(29)</span>
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="sidebar">
+
+        <div class="box">
+            <h3 class="title">about us</h3>
+            <div class="about">
+                <h3 style="color: rgb(185, 91, 9);">Akshay Navale, Ashish Pate, Prathamesh Chaudhari</h3>
+                <p>Students of Pimpri Chinchwad College of Engineering</p>
+                <p>ENTC Department</p>
+                <div class="follow">
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-linkedin"></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <h3 class="title">categories</h3>
+            <div class="category">
+                <a href="#"> travel <span>42</span></a>
+                <a href="#"> photography <span>75</span> </a>
+                <a href="#"> technology <span>22</span> </a>
+                <a href="#"> fashion <span>17</span> </a>
+                <a href="#"> study <span>48</span> </a>
+                <a href="#"> science <span>39</span> </a>
+                <a href="#"> music <span>59</span> </a>
+                <a href="#"> public <span>12</span> </a>
+                <a href="#"> business <span>32</span> </a>
+                <a href="#"> sports <span>18</span> </a>
+            </div>
+        </div>
+
+        <div class="box">
+            <h3 class="title">popular posts</h3>
+            <div class="p-post">
+                <a href="#">
+                    <h3>01. #1</h3>
+                    <span><i class="far fa-clock"></i>1st April, 2025</span>
+                </a>
+                <a href="#">
+                    <h3>02. #2</h3>
+                    <span><i class="far fa-clock"></i>1st April, 2021</span>
+                </a>
+                <a href="#">
+                    <h3>03. #3</h3>
+                    <span><i class="far fa-clock"></i>1st April, 2021</span>
+                </a>
+                <a href="#">
+                    <h3>04. #4</h3>
+                    <span><i class="far fa-clock"></i>1st April, 2021</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="box">
+            <h3 class="title">popular tags</h3>
+            <div class="tags">
+                <a href="#">travel</a>
+                <a href="#">photo</a>
+                <a href="#">science</a>
+                <a href="#">biology</a>
+                <a href="#">aliens</a>
+                <a href="#">nature</a>
+                <a href="#">mountain</a>
+                <a href="#">river</a>
+                <a href="#">camp</a>
+                <a href="#">landscape</a>
+                <a href="#">world</a>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- posts section ends -->
+
+<!-- contact section starts  -->
+
+<section class="contact" id="contact">
+
+    <form action="">
+        <h3>contact me</h3>
+        <div class="inputBox">
+            <input type="text" placeholder="name">
+            <input type="email" placeholder="email">
+        </div>
+        <div class="inputBox">
+            <input type="number" placeholder="number">
+            <input type="text" placeholder="subject">
+        </div>
+        <textarea name="" placeholder="message" id="" cols="30" rows="10"></textarea>
+        <input type="submit" value="send message" class="btn">
+    </form>
+
+</section>
+
+<!-- contact section ends -->
+
+<!-- footer section starts  -->
+
+<section class="footer">
+
+    <div class="follow">
+        <a href="#" class="fab fa-facebook-f"></a>
+        <a href="#" class="fab fa-twitter"></a>
+        <a href="#" class="fab fa-instagram"></a>
+        <a href="#" class="fab fa-linkedin"></a>
+    </div>
+
+</section>
+
+<!-- footer section ends -->
+
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+    
+</body>
+</html>
